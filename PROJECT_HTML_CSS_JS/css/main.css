@@ -1,0 +1,39 @@
+:root{
+    --background-page: #f3f3f3;
+    --main-color: #fe5454;
+    --main-color-rgba: rgba(254, 84, 84, 0.5);
+    --text-color: #0000;
+    --white-rgba: rgba(255, 255, 255, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* header */
+    --header-height: 210px;
+    --header-navbar: 40px;
+    --header-toolbar: 55px;
+    --header-with-search: calc(var(--header-height) - var(--header-navbar) - var(--header-toolbar));
+}
+*{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Arial;
+    box-sizing: border-box;
+    background: var(--background-page);
+}
+
+.grid{
+    width: 1438px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
